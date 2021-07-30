@@ -3,10 +3,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding-bottom: 266px;
-    border-style: solid;
-    border-width: 2rem;
     text-decoration: none;
-    border: solid #ff5e00;
 }
 img {
     width: 50px;
