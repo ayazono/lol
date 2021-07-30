@@ -5,11 +5,53 @@ body {
     padding-bottom: 266px;
     text-decoration: none;
 }
+
+img:hover {
+  height: auto;
+        width: 60px;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -ms-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+
+}
 img {
-    width: 50px;
-    height: auto;
-  
-    
+  height: auto;
+      width: 80px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+footer img {
+  height: auto;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  padding-left: 880px;
+  animation: move 1s;
+
+}
+footer img:hover{
+height:  auto;
+width: 200px;
+
+}
+
+h2 {
+  color: #ffc300;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+  animation: large 1s;
+}
+
+#shokran {
+  animation: move2 1s;
+  padding-left: 780px;
+  color: #ffc300;
+  font-size: 20px;
+  font-family: monospace;
 }
 #qualif {
     text-align: center;
@@ -17,8 +59,13 @@ img {
     color: #ffc300;
     font-size: 20px;
     font-family: monospace;
-    padding-left: 50px;
+    padding-left: 20px;
     border: solid #ffc300;
+    animation: large 1s;
+}
+#skill {
+  animation: large 0.7s;
+  font-family: monospace;
 }
 ul {
     list-style-type: none;
@@ -29,14 +76,15 @@ ul {
 #nav-link {
     position: relative;
     display: table-cell;
-    padding-left: 325px;
+    padding-left: 300px;
     top: 70px;
+    animation: move1 1s;
 }
 .typing {
     text-align: center;
     position: relative;
     font-family: 'Cairo', sans-serif;
-   
+
     font-size: 70px;
     margin-top: 210px;
     color: #ffc300;
@@ -68,7 +116,7 @@ ul {
     left: 845px;
         padding: 90px;
     font-family: 'Cairo', sans-serif;
-   
+
     font-size: 20px;
 
     color: #ffc300;
@@ -85,6 +133,41 @@ ul {
 }
 
 
+@keyframes move{
+  0% {
+    padding-left: 0px;
+  }
+  100% {
+    padding-left: 880px;
+  }
+}
+
+@keyframes move2{
+  0% {
+    padding-left: 0px;
+  }
+  100% {
+    padding-left: 780px;
+  }
+}
+
+@keyframes large{
+  0% {
+    font-size: 5px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+
+@keyframes move1{
+  0% {
+    padding-left: 0px;
+  }
+  100% {
+    padding-left: 300px;
+  }
+}
 
 @keyframes blink{
     0%{
