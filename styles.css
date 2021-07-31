@@ -8,7 +8,7 @@ body {
 
 img:hover {
   height: auto;
-        width: 60px;
+        width: 63px;
         -webkit-transition: all 0.7s ease;
         -moz-transition: all 0.7s ease;
         -ms-transition: all 0.7s ease;
@@ -26,9 +26,10 @@ img {
 footer img {
   height: auto;
   width: 200px;
-  display: flex;
-  justify-content: center;
-  padding-left: 880px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   animation: move 1s;
 
 }
@@ -47,8 +48,8 @@ h2 {
 }
 
 #shokran {
-  animation: move2 1s;
-  padding-left: 780px;
+  animation: move 1s;
+  text-align:  center;
   color: #ffc300;
   font-size: 20px;
   font-family: monospace;
@@ -66,19 +67,34 @@ h2 {
 #skill {
   animation: large 0.7s;
   font-family: monospace;
+
 }
 ul {
+  list-style-type: none;
+
+}
+.nav-links{
     list-style-type: none;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-around;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
 }
 #nav-bar {
     border: solid #ffc300;
 }
 #nav-link {
     position: relative;
-    display: table-cell;
-    padding-left: 300px;
-    top: 70px;
-    animation: move1 1s;
+    display: flex;
+    justify-content: space-around;
+    order: 5;
+    flex-wrap: wrap-reverse;
+    top: 90px;
+    animation: move1 0.9s;
+
 }
 .typing {
     text-align: center;
@@ -107,16 +123,19 @@ ul {
     font-size: 20px;
     color: #ffc300;
     text-decoration: none;
-    padding-left: 5px;
 
 }
 .typing2 {
 
-    position:absolute;
-    left: 845px;
-        padding: 90px;
-    font-family: 'Cairo', sans-serif;
+    position:relative;
 
+    /*left: 845px;
+      padding: 90px; */
+    margin-bottom: -30px;
+    margin-top: -38px;
+    bottom: 20px;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
     font-size: 20px;
 
     color: #ffc300;
@@ -135,10 +154,11 @@ ul {
 
 @keyframes move{
   0% {
-    padding-left: 0px;
+      transform: translateX(-900px)
+
   }
   100% {
-    padding-left: 880px;
+    transform: translateX(0px)
   }
 }
 
@@ -162,10 +182,13 @@ ul {
 
 @keyframes move1{
   0% {
-    padding-left: 0px;
+    transform: translateX(-1500px);
+
+
   }
   100% {
-    padding-left: 300px;
+    transform: translateX(0);
+
   }
 }
 
