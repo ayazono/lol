@@ -1,4 +1,4 @@
-const text1 = ['EST. 2005'];
+const text1 = ['EST. 2001'];
 let count1 = 0;
 let index1 = 0;
 let currentText1 = '';
