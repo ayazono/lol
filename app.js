@@ -1,4 +1,4 @@
-const text = ['- Ali Omar -علي عمر-'];
+const text = ['- Lord Kaizar -عنتيل-'];
 let count = 0;
 let index = 0;
 let currentText = '';
